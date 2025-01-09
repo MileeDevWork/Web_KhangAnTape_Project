@@ -599,6 +599,10 @@ video {
   height: 20rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -621,6 +625,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .flex-row {
@@ -669,6 +677,10 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-green {
