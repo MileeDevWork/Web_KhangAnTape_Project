@@ -1,7 +1,7 @@
-import Header from "./components/Header";
+import Header_chua_dang_nhap from "./components/Header_chua_dang_nhap";
 
 function App() {
-  return <div><Header /></div>;
+  return <div><Header_chua_dang_nhap /></div>;
 }
 
 export default App;
