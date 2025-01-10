@@ -13,6 +13,7 @@ export default {
       colors: {
         green: '#156B14',
         xanh_ma: '#F9FDE7',
+        nen_popup: '#F4F5EF',
       },
       boxShadow: {
         'bong': '0px 4px 6px 0px #789A3D', // Định nghĩa shadow tùy chỉnh

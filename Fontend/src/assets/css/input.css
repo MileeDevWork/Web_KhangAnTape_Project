@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .button_header {
-    @apply h-10 w-28 bg-xanh_ma text-black font-Roboto font-medium px-2 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#CADC6C] hover:via-[#CADC6C] hover:to-[#F9FDE7] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-bong;
+    @apply h-10 w-[85px] bg-xanh_ma text-black font-Roboto font-semibold text-xs px-2 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#CADC6C] hover:via-[#CADC6C] hover:to-[#F9FDE7] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-bong;
 }
 
 .text_hover_header {
