@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        BeVietnam: ['Be Vietnam Pro', 'sans-serif'],
+        // BeVietnam: ['Be Vietnam Pro', 'sans-serif'],
         Roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
