@@ -235,7 +235,7 @@ function Footer() {
         <div className="pt-8 sm:pt-8 md:pt-20">
           <p className="font-semibold pb-2">Để lại thông tin liên hệ</p>
           <div className="flex pt-3">
-            <input className="h-9 w-28"></input>
+            <input className="h-9 w-28 text-black"></input>
             <button className="bg-slate-400 h-9 w-16 text-black">Gửi</button>
           </div>
           <div className="flex space-x-6 pt-4">
