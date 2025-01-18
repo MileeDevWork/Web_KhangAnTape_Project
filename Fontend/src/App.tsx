@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/header_logout"; // Đảm bảo bạn đã import đúng Header
-import Home from "./pages/home"; // Đảm bảo bạn đã import đúng trang Home
+import Header from "./components/header_logout"; 
+import Footer from "./components/footer";
+import Home from "./pages/home"; 
 import About from "./pages/about";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
