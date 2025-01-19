@@ -37,11 +37,10 @@ function Header() {
         </div>
         <div className="bg-green h-14 shadow-2xl flex items-center justify-center text-white">
           <ul className="flex space-x-6 sm:space-x-10 md:space-x-20 font-Roboto font-medium test-sm">
-            <li className="text_hover_header">SẢN PHẨM</li>
-            <li className="text_hover_header">TIN TỨC</li>
-            {/* <li className="text_hover_header"><a href="#">GIỚI THIỆU</a></li> */}
-            <li className="text_hover_header"> <Link to="/about">GIỚI THIỆU</Link> </li>
-            <li className="text_hover_header">LIÊN HỆ</li>
+            <li className="text_hover_header"><Link to="/product_list">SẢN PHẨM</Link></li>
+            <li className="text_hover_header"><Link to="/news">TIN TỨC</Link></li>
+            <li className="text_hover_header"><Link to="/about">GIỚI THIỆU</Link></li>
+            <li className="text_hover_header"><Link to="/contact">LIÊN HỆ</Link></li>
           </ul>
         </div>
       </>
