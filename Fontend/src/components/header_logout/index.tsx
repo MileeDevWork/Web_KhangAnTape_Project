@@ -6,7 +6,7 @@ function Header() {
       <>
         <div className="bg-white text-white font-Roboto h-14 pl-10 flex flex-row items-center">
           <div className="w-1/2">
-            <img src="/img/Logo_xanh.png" alt="Logo" className="object-contain" />
+            <Link to={"/"}><img src="/img/Logo_xanh.png" alt="Logo" className="object-contain" /></Link>
           </div>
           <div className="w-1/2 flex justify-end items-center pr-4 space-x-3">
             <button>
