@@ -12,7 +12,8 @@ export default {
       },
       colors: {
         green: '#156B14',
-        xanh_nhat: '789A3D',
+        dark_green: '#185A3B',
+        xanh_nhat: '#789A3D',
         xanh_ma: '#F9FDE7',
         nen_popup: '#F4F5EF',
       },
