@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,memo } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const slides = [
@@ -57,4 +57,4 @@ const BannerSlide = () => {
   );
 };
 
-export default BannerSlide;
+export default memo(BannerSlide);

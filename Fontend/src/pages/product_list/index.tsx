@@ -1,10 +1,9 @@
-import Header from "../../components/header_logout";
-import Footer from "../../components/footer";
 
+import { memo} from "react";
 function Product_list() {
     return (
         <>
-            <Header />
+        
             <div className="p-16 font-Roboto">
                 <div className="font-Roboto font-bold text-dark_green text-xl pl-10">
                     SẢN PHẨM
@@ -236,8 +235,8 @@ function Product_list() {
                 {/* endrow2 */}
             </div>
 
-            <Footer />
+  
         </>
     );
 }
-export default Product_list;
+export default memo(Product_list);

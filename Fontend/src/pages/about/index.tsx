@@ -1,3 +1,5 @@
+import Header from "../../components/header_logout";
+import { memo} from "react";
 function About() {
     return (
         <>
@@ -7,4 +9,4 @@ function About() {
         </>
     )
 }
-export default About;
+export default memo(About);

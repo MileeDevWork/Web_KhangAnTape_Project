@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "../../components/header_logout";
-import Footer from "../../components/footer";
-import BannerSlide from "../../components/banner";
 
+
+import BannerSlide from "../../components/banner";
+import { memo} from "react";
 function Home() {
   return (
     <>
       <div className="w-screen font-Roboto">
-        <Header />
         <BannerSlide />
         <div className="flex justify-center pt-2">
           <button className="button_use">Liên hệ ngay</button>
@@ -64,9 +63,9 @@ function Home() {
             <div className="bg-yellow-100 w-72 h-40">hang2</div>
           </div>
         </div>
-        <Footer />
+       
       </div>
     </>
   );
 }
-export default Home;
+export default memo(Home);
