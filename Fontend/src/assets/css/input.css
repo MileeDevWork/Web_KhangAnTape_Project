@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .button_header {
-    @apply h-10 w-28 bg-xanh_ma text-black font-Roboto px-2 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#CADC6C] hover:via-[#CADC6C] hover:to-[#F9FDE7] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-bong;
+    @apply h-10 w-[85px] bg-xanh_ma text-black font-Roboto font-semibold text-xs px-2 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#CADC6C] hover:via-[#CADC6C] hover:to-[#F9FDE7] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-bong;
 }
 
 .text_hover_header {
     @apply cursor-pointer relative after:absolute after:bottom-[-2px] after:left-0
     after:bg-white after:h-0.5 after:w-full after:origin-center after:scale-x-0 hover:after:scale-x-100 
     after:transition-transform after:ease-out after:duration-500 font-Roboto text-sm;
+} 
+
+ .button_use {
+    @apply h-10 bg-green text-white font-Roboto font-semibold text-xs px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-[#156B14] hover:via-[#156B14] hover:to-[#789A3D] focus:outline-none transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-bong;
 }
