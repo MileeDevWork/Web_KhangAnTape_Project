@@ -1,13 +1,10 @@
 import { memo, useState, useEffect } from "react";
 import {
-  AiOutlineSearch,
-  AiOutlineShoppingCart,
   AiOutlineMail,
   AiOutlinePhone,
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-  AiOutlineUser,
 } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
+import { LiaFacebookMessenger,LiaFacebookSquare } from "react-icons/lia";
 import { SiZalo } from "react-icons/si";
 import { Link } from "react-router-dom";
 
@@ -64,14 +61,33 @@ function Header() {
                 after:h-5 after:w-[1px] after:bg-black after:opacity-10 
                 after:-translate-y-1/2"
                 >
-                  <AiOutlineMail/>: hieu.duongk22bk@hcmut.edu.vn
+                  <AiOutlineMail />: hieu.duongk22bk@hcmut.edu.vn
                 </li>
                 <li className="text-xs flex items-center">
                   <AiOutlinePhone />: 0869611401
                 </li>
               </ul>
             </div>
-            <div className="basis-1/2">RIGHT</div>
+            <div className="basis-1/2">
+              <ul className="flex justify-end items-center gap-x-6 ">    
+                <Link to={""}>
+                  <li className="fb text-xl">
+                    <LiaFacebookSquare />
+                  </li>
+                </Link>
+                <Link to={""}>
+                  <li className="ins text-xl">
+                    <LiaFacebookMessenger />
+                  </li>
+                </Link>
+                <Link to={""}>
+                  <li className="zalo text-xl">
+                    <SiZalo />
+                  </li>
+                </Link>
+                
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +143,7 @@ function Header() {
                       key={index}
                     >
                       <Link
-                        className={`no-underline text-base font-medium block py-1.5  tracking-widest leading-10
+                        className={`no-underline text-base font-semibold text-normal block py-1.5  tracking-widest leading-10
                         before:content-[''] before:w-0 before:h-1.5 before:bg-main before:absolute
                         before:top-full before:left-0 before:duration-300  
                         ${
@@ -141,11 +157,11 @@ function Header() {
                         {name?.name}
                       </Link>
                       {name?.child && (
-                        <ul className="header_menu_dropdown bg-bgr absolute w-40 top-13 -left-1 z-50 py-1.5 transition-all duration-500 opacity-0 invisible block group-hover:opacity-100 group-hover:visible">
+                        <ul className="header_menu_dropdown bg-bgr absolute w-44 top-13 -left-1 z-50 py-1.5 transition-all duration-500 opacity-0 invisible block group-hover:opacity-100 group-hover:visible">
                           {name.child.map((nameChild, indexChild) => (
                             <li key={`${index}-${indexChild}`}>
                               <Link
-                                className=" font-normal text-lg pt-1.5 pb-1.5 pl-3.5 hover:text-amber-400  "
+                                className=" font-semibold text-base pt-1.5 pb-1.5 pl-3.5 hover:text-amber-400  "
                                 to={nameChild.path}
                               >
                                 {nameChild.name}
@@ -166,8 +182,8 @@ function Header() {
                 <div className="header_find">
                   <ul>
                     <li>
-                      <Link to="#" className="text-3xl hover:text-main">
-                        <AiOutlineSearch />
+                      <Link to="#" className="text-2xl hover:text-main">
+                        <BsSearch />
                       </Link>
                     </li>
                   </ul>

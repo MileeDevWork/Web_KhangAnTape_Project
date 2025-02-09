@@ -1,6 +1,6 @@
 import {memo} from 'react'
 import Header from '../header_logout';
-//import Footer from '../footer';
+import Footer from '../footer';
 import React from "react";
 
 interface Props {
@@ -11,7 +11,7 @@ const MasterLayout: React.FC<Props>= ({children,...props}) =>
         <div>
             <Header />
             {children}
-            {/* <Footer/> */}
+            { <Footer/> }
         </div>
        
     )
