@@ -1,0 +1,13 @@
+.react-multiple-carousel__arrow{
+    background: #e1e0e0;
+    &::before{
+        color:#008874;
+    }
+
+    &:hover{
+        background: #e1e0e0;
+        &::before{
+            color:#008874;
+        }
+    }
+}
