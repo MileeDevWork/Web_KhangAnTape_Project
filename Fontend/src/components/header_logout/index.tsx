@@ -14,6 +14,28 @@ function Header() {
     if (index !== activeIndex)
       setActiveIndex(index === activeIndex ? 0 : index);
   };
+
+  const [isSticky, setIsSticky] = useState(false);
+  const [lastScroll, setLastScroll] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll) {
+        setIsSticky(false);
+      } else {
+
+        setIsSticky(true);
+      }
+      setLastScroll(currentScroll); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScroll]);
+
   const [menu] = useState([
     {
       name: "Trang Chủ",
@@ -93,7 +115,7 @@ function Header() {
       </div>
       {/* {Header-top END} */}
       {/* {Header-bottom BEGIN} */}
-      <div className="header_bottom font-Roboto  bg-white sticky top-0 z-50  ">
+      <div className={`header_bottom font-Roboto  bg-white ${isSticky? 'sticky' :''} top-0 z-50  `}>
         <div className="container max-w-[1200px] m-auto  ">
           <div className="header_row flex flex-wrap items-center">
             {/* {Header-bottom logo BEGIN} */}
@@ -101,6 +123,7 @@ function Header() {
               <Link
                 onClick={() => {
                   handleClick(0);
+                  window.scrollTo({top:0})
                 }}
                 to="/"
               >
@@ -134,6 +157,7 @@ function Header() {
                     <li
                       onClick={() => {
                         handleClick(index);
+                        window.scrollTo({top:0})
                       }}
                       className={`${
                         activeIndex === index
@@ -145,7 +169,7 @@ function Header() {
                       <Link
                         className={`no-underline text-base font-semibold text-normal block py-1.5  tracking-widest leading-10
                         before:content-[''] before:w-0 before:h-1.5 before:bg-main before:absolute
-                        before:top-full before:left-0 before:duration-300  
+                        before:top-[60px] before:left-0 before:duration-300  
                         ${
                           activeIndex === index
                             ? "before:w-full"
