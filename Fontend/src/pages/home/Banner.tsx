@@ -34,7 +34,7 @@ function Banner() {
     <>
       {/*Banner begin*/}
               <div
-                className="carousel_wrapper flex relative h-[586px] w-full"
+                className="carousel_wrapper flex relative h-[530px] w-full mt-8"
                 onMouseEnter={() => {
                   setAutoPlay(false);
                   clearTimeout(timeOut);
