@@ -8,8 +8,9 @@ export default {
     extend: {
       fontFamily: {
         // BeVietnam: ['Be Vietnam Pro', 'sans-serif'],
-        Roboto: ['Roboto', 'sans-serif'],
-        Godtham: ["Gotham book", 'sans-serif']
+        Roboto: ['Roboto', 'serif'],
+        Montserrat:["Montserrat", 'serif'],
+        Poppins:["Poppins", 'serif']
       },
       colors: {
         green: '#156B14',

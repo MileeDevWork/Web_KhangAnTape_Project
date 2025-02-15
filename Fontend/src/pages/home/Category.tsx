@@ -36,27 +36,27 @@ function Category() {
   };
   const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 3000, min: 1023 },
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1023, min: 768 },
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 767, min: 640 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 639, min: 0 },
       items: 1,
     },
   };
   return (
     <>
       {/*Category begin */}
-      <div className="container max-w-[1200px] m-auto">
-        <Carousel responsive={responsive}>
+      <div className="container max-w-[1200px] m-auto mt-[25px]">
+        <Carousel className="w-full" responsive={responsive}>
           {dataCategory.map((category, indexCategory) => (
            <Link to=''>
             <div

@@ -10,6 +10,10 @@ const dataSlider = [
     {
         id:3,
         title:'anh-3'
+    },
+    {
+        id:4,
+        title:'anh-4'
     }
 ]
 export default dataSlider;

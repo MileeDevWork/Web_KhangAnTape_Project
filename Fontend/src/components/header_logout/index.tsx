@@ -7,6 +7,7 @@ import { BsSearch } from "react-icons/bs";
 import { LiaFacebookMessenger,LiaFacebookSquare } from "react-icons/lia";
 import { SiZalo } from "react-icons/si";
 import { Link } from "react-router-dom";
+import 'animate.css';
 
 function Header() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -72,7 +73,7 @@ function Header() {
   return (
     <>
       {/* {Header-top BEGIN} */}
-      <div className="header_top bg-headbg">
+        <div className="header_top bg-headbg">
         <div className="container max-w-[1200px] m-auto ">
           <div className="header_row flex flex-wrap items-center">
             <div className="basis-1/2">
@@ -115,7 +116,7 @@ function Header() {
       </div>
       {/* {Header-top END} */}
       {/* {Header-bottom BEGIN} */}
-      <div className={`header_bottom font-Roboto  bg-white ${isSticky? 'sticky' :''} top-0 z-50  `}>
+      <div className={`header_bottom font-Montserrat  bg-white ${isSticky? 'sticky animate__animated animate__fadeInDown animate__fast' :''} top-0 z-50  `}>
         <div className="container max-w-[1200px] m-auto  ">
           <div className="header_row flex flex-wrap items-center">
             {/* {Header-bottom logo BEGIN} */}
@@ -167,9 +168,9 @@ function Header() {
                       key={index}
                     >
                       <Link
-                        className={`no-underline text-base font-semibold text-normal block py-1.5  tracking-widest leading-10
+                        className={`no-underline text-sm uppercase font-medium text-normal block py-1.5  tracking-widest leading-10
                         before:content-[''] before:w-0 before:h-1.5 before:bg-main before:absolute
-                        before:top-[60px] before:left-0 before:duration-300  
+                        before:top-[60px] before:left-0 before:duration-300  hover:text-main
                         ${
                           activeIndex === index
                             ? "before:w-full"
@@ -181,11 +182,11 @@ function Header() {
                         {name?.name}
                       </Link>
                       {name?.child && (
-                        <ul className="header_menu_dropdown bg-bgr absolute w-44 top-13 -left-1 z-50 py-1.5 transition-all duration-500 opacity-0 invisible block group-hover:opacity-100 group-hover:visible">
+                        <ul className="header_menu_dropdown bg-white absolute w-44 top-[60px] left-[0px] z-50 transition-all duration-500 opacity-0 invisible block space-y-3 group-hover:opacity-100 group-hover:visible">
                           {name.child.map((nameChild, indexChild) => (
                             <li key={`${index}-${indexChild}`}>
                               <Link
-                                className=" font-semibold text-base pt-1.5 pb-1.5 pl-3.5 hover:text-amber-400  "
+                                className=" font-normal text-base pl-3.5 hover:text-main  "
                                 to={nameChild.path}
                               >
                                 {nameChild.name}
