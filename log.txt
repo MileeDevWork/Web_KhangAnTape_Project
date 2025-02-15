@@ -1,3 +1,4 @@
 --Date - Name - Activities
 
 --11/2/2025 - Hiếu - Tạo log/ Sửa size của banner/ Thêm hiệu ứng cho thao tác scroll ở header
+--15/2/2025 - Hiếu - Code trang home
